@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Search bar -->
+      <div class="search-box">
+        <input type="text" name="city" placeholder="Enter City Name" />
+        <div class="search-btn">
+          <button id="btn">
+            <lord-icon
+              src="https://cdn.lordicon.com/kkvxgpti.json"
+              trigger="hover"
+              style="width: 20px; height: 20px"
+            ></lord-icon>
+          </button>
+        </div>
+      </div>
+      <!-- spinner -->
+      <div class="spinner"></div>
+
+        <!-- Error -->
+        <div class="error-box">
+          <div class="error">
+            <lord-icon
+              src="https://cdn.lordicon.com/ygvjgdmk.json"
+              trigger="hover"
+              style="width: 20px; height: 20px"
+              >
+            </lord-icon>
+            <h4>Invalid City name</h4>
+        </div>
+    </div>
+    
+    <div class="main-container">
+        <!-- Temperature  -->
+        <div class="temperature-box">
+          <div class="weather-image"></div>
+          <div class="weather">
+            <h2 id="temperature"></h2>
+            <h1 id="temperature"></h1>
+          </div>
+        </div>
+
+        <!-- Extra Weather condition  -->
+        <div class="extra-weather">
+          <div class="humidity-container">
+            <div class="humidity">
+              <h2></h2>
+              <h3></h3>
+            </div>
+          </div>
+          <div class="wind-container">
+            <div class="wind-speed">
+              <h2></h2>
+              <h3></h3>
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script src="./js/controller.js"></script>
+  </body>
+</html>
